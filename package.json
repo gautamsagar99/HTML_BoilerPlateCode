@@ -1,0 +1,43 @@
+{
+  "name": "htmlboilderplate",
+  "displayName": "HTML-BoilerPlate",
+  "description": "This will generate basic HTML,CSS, Javacript boiler plate codes.",
+  "publisher": "GautamSagarMallela",
+  "version": "2.1.0",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "htmlboilderplate.createHtmlBoilerPlate",
+        "title": "createHtmlBoilerPlate"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.79.0",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
